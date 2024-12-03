@@ -17,12 +17,7 @@ Here’s a quick rundown of why I built the site, the challenges I faced, and wh
 
 ## Why Build a Personal Website?
 
-I wanted a space to capture and share my thoughts on tech, work, and the processes I’m trying to improve. A personal website offers the freedom to blog and practice my development skills without relying on social media platforms.
-
-It’s also a great way to:
-- Share experiences and blog more frequently.
-- Showcase my technical skills while keeping maintenance simple and cost-effective.
-- Start with something free and straightforward, with room to evolve.
+I wanted a space to capture and share my thoughts and experiences. A personal website offers the freedom to blog and practice my development skills without relying on social media platforms. I also find it helpful to record my thoughts and ideas so this is simply a natural extension of work I already do.
 
 ---
 
@@ -39,7 +34,7 @@ After exploring options like plain HTML/CSS, Gatsby, and React, I chose Jekyll b
 
 ## What Went Well
 
-- **Theme Choice**: The [Chirpy theme](https://chirpy.cotes.page/posts/getting-started/) was an excellent choice. Its clean layout and sidebar are perfect for blogging.
+- **Theme Choice**: [Chirpy theme](https://chirpy.cotes.page/posts/getting-started/); Its clean layout and sidebar are perfect for blogging.
 - **Local Development Setup**: Running Jekyll locally made testing changes quick and efficient.
 - **GitHub Pages Hosting**: Free, reliable, and easy to set up—perfect for a starting point.
 
@@ -49,9 +44,9 @@ After exploring options like plain HTML/CSS, Gatsby, and React, I chose Jekyll b
 
 While following GitHub’s [tutorial](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll), I encountered a few hiccups:
 
-1. **Wrong Starting Point**: I initially followed the github tutorial, but it would have been more straightfoward to pick the theme first and start with the theme's specific guide (I used [Chirpy](https://chirpy.cotes.page/posts/getting-started/).)
+1. **Wrong Starting Point**: I initially followed the github tutorial, but it would have been more straightforward to pick the theme first and start with the theme's specific guide (I used [Chirpy](https://chirpy.cotes.page/posts/getting-started/).)
 2. **Favicon and Avatar Issues**: I struggled with customizing the favicon and avatar. Ultimately, these challenges taught me a lot about the build process. Lesson learned: Read instructions carefully!
-3. **Post File Naming**: I misunderstood how to name posts. Files should follow the format `YYYY-MM-DD-TITLE.extension`, but I initially skipped the title part. Lesson learned: Once again read instructions carefully!
+3. **Post File Naming**: I misunderstood how to name posts. Files should follow the format `YYYY-MM-DD-TITLE.extension`, but I initially skipped the title part. Lesson learned: Once again read the instructions!
 
 ---
 
