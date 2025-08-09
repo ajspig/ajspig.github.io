@@ -4,9 +4,6 @@ date: 2025-08-09 12:18:22 +/-2025
 categories: [Software Development, AI Tools, Developer Experience]
 tags: [Developer Tools, Software Engineering,Technical Opinion, AI Tools, Claude Code, ] 
 ---
-
-## A Week Of Claude Code
-
 This week at work I had the chance to spend some time working with Claude Code and I loved it!
 
 I’ve already processed a lot of information about Claude Code, so I started off feeling pretty comfortable with using it.  I am so aware there is a lot about Claude Code out there, so my remarks will really only focus on my experience. Additionally, if there is one thing that is true, its that the AI industry moves fast. Who knows… will this article be completely irrelevant in 1 month or in 1 year? So I’ll try and balance the constant and the trendy.
