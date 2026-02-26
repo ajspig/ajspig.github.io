@@ -7,17 +7,9 @@ Hello! I'm Abigail Spigarelli and I am a curiosity and problem solving driven en
 
 ## Professional Experience
 
-I just reached my 6 months mark since I graduated in Computer Science from Brigham Young University and I've already worked a variety of different jobs within the tech space. Research, Cybersecurity, Data Science, DevOps, and Software Engineering are just a couple of jobs and roles I've enjoyed. One of my favorite books is [Range: Why Generalists Triumph in a Specialized World](https://davidepstein.com/range/), and a career and personal goal of mine is to become the generalist's Epstein describes. I am always excited to work on something new, so please reach out if you have an opportunity!
+I graduated in Computer Science from Brigham Young University and I've already worked a variety of different jobs within the tech space. Research, Cybersecurity, Data Science, DevOps, Software Engineering, and Developer Relations are just a couple of jobs and roles I've enjoyed. One of my favorite books is [Range: Why Generalists Triumph in a Specialized World](https://davidepstein.com/range/), and a career and personal goal of mine is to become the generalist's Epstein describes. I am always excited to work on something new, so please reach out if you have an opportunity!
 
-Currently, I work as a Software Engineer for Leidos.
-
-## Skills
-
-- **Programming Languages:** Python and C++ and Java.
-- **Frameworks & Tools:** Git, Scrum, Docker, Kubernetes, Linux, Network Troubleshooting, and AWS
-
-<!-- ## Projects
-<!-- More coming! -->
+Currently, I work as a Developer Relations Engineer for Plastic Labs.
 
 ## Contact
 
