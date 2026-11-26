@@ -32,4 +32,4 @@ I specifically retained the name "brag" for their title ***because*** it made me
 
 I've been working in the tech industry since 2024 (2022 if you count internships 🐣). I have a bachelor's in Computer Science from Brigham Young University. 
 
-I also enjoy volunteering and I've had the chance to serve in various capacities for a variety of organizations ([Pursuit](https://www.pursuit.org/), [Church of Jesus Christ](https://www.churchofjesuschrist.org), [BYU Women in Computer Science club](https://cs.byu.edu/clubs/wics/)).
+I also enjoy volunteering and I've had the chance to serve in various capacities for a variety of organizations ([Pursuit](https://www.pursuit.org/), [Church of Jesus Christ](https://www.churchofjesuschrist.org), [BYU Pathways](https://www.byupathway.edu/), [BYU Women in Computer Science club](https://cs.byu.edu/clubs/wics/)).
