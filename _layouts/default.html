@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <script>
+    try { if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark'); } catch (e) {}
+  </script>
+  {% seo %}
+  {% feed_meta %}
+  <link rel="icon" href="{{ '/assets/img/favicons/favicon.ico' | relative_url }}" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/favicons/favicon.svg' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/favicons/apple-touch-icon.png' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+<body>
+  <div class="shell">
+    <a class="mark" href="{{ '/' | relative_url }}" aria-label="{{ site.title }}, home"><span aria-hidden="true">AS</span></a>
+
+    <div class="topbar">
+      <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" hidden>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+
+    <nav class="nav" aria-label="Primary">
+      <ul>
+        {%- for item in site.data.nav -%}
+          {%- assign active = false -%}
+          {%- if page.url == item.url -%}
+            {%- assign active = true -%}
+          {%- elsif item.url == '/' and page.layout == 'post' -%}
+            {%- assign active = true -%}
+          {%- endif %}
+        <li><a href="{{ item.url | relative_url }}"{% if active %} class="is-active"{% endif %}{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+
+    <main class="main">
+      {{ content }}
+    </main>
+
+    <footer class="footer">
+      <a href="https://github.com/{{ site.github.username }}">GitHub</a>
+      <a href="https://www.linkedin.com/in/abigail-spigarelli/">LinkedIn</a>
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var btn = document.querySelector('.theme-toggle');
+      var meta = document.querySelector('meta[name="theme-color"]');
+      if (!btn) return;
+      function sync() {
+        var dark = root.getAttribute('data-theme') === 'dark';
+        btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+        if (meta) meta.setAttribute('content', dark ? '#bfafe0' : '#ffffff');
+      }
+      btn.hidden = false;
+      sync();
+      btn.addEventListener('click', function () {
+        var toDark = root.getAttribute('data-theme') !== 'dark';
+        if (toDark) root.setAttribute('data-theme', 'dark'); else root.removeAttribute('data-theme');
+        try { localStorage.setItem('theme', toDark ? 'dark' : 'light'); } catch (e) {}
+        sync();
+      });
+    })();
+  </script>
+</body>
+</html>

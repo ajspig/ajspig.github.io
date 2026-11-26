@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article>
+  <header class="article-header{% if page.photo %} has-photo{% endif %}">
+    {%- if page.photo %}
+    <img class="portrait" src="{{ page.photo | relative_url }}" alt="{{ page.photo_alt | default: site.title }}" width="256" height="256">
+    {%- endif %}
+    <div>
+      <h1 class="article-title">{{ page.title }}</h1>
+      {%- if page.subtitle %}
+      <p class="article-subtitle">{{ page.subtitle | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+      {%- endif %}
+    </div>
+  </header>
+  <div class="prose">
+    {{ content }}
+  </div>
+</article>

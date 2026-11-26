@@ -1,0 +1,9 @@
+# Sidebar navigation, in display order.
+- title: About
+  url: /about/
+- title: Writing
+  url: /
+- title: Lists
+  url: /lists/
+- title: Say Hi
+  url: /say-hi/
