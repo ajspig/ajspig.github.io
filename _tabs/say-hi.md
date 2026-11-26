@@ -8,6 +8,7 @@ Some things I'm always happy to chat about:
 
 - Career paths for generalists
 - Old/new problems!
+- A cool event you are going to 
 - Building with AI (agent memory, coding agents, and/or crash out?)
 - Project feedback (happy to give a second pair of eyes on a side project, README, demo, or personal site)
 - and I'm always down for another accountability partner 🙋‍♀️

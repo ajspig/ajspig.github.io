@@ -278,6 +278,7 @@ a { color: inherit; }
   font-weight: 700;
   line-height: 1.3;
 }
+.prose h2, .prose h3, .prose h4 { scroll-margin-top: 1.5rem; }
 .prose h2 { font-size: 1.375rem; }
 .prose h3 { font-size: 1.15rem; }
 .prose h4 { font-size: 1rem; }
@@ -351,6 +352,64 @@ a { color: inherit; }
   text-align: left;
 }
 .prose th { font-weight: 600; }
+
+/* ---------- "On this page" sidebar (posts) ---------- */
+
+.toc { display: none; }
+
+.toc-title {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font: 600 0.75rem/1.2 var(--sans);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid var(--line);
+}
+
+.toc-list a {
+  display: block;
+  margin-left: -1px;
+  padding: 0.3rem 0 0.3rem 0.9rem;
+  border-left: 2px solid transparent;
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  text-decoration: none;
+}
+.toc-list .toc-h3 a { padding-left: 1.65rem; font-size: 0.8125rem; }
+.toc-list a:hover { color: var(--text); }
+.toc-list a.is-active {
+  border-left-color: var(--berry);
+  color: var(--text);
+  font-weight: 500;
+}
+
+@media (min-width: 1100px) {
+  .article-body {
+    display: grid;
+    grid-template-columns: minmax(0, 42rem) minmax(8rem, 1fr);
+    column-gap: 2.75rem;
+    align-items: start;
+  }
+  .toc {
+    display: block;
+    position: sticky;
+    top: 2rem;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  .toc[hidden] { display: none; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
 
 /* ---------- Footer ---------- */
 
